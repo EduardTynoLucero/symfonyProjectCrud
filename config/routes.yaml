@@ -1,0 +1,13 @@
+
+login:
+    path: /login
+    controller: App\Controller\SecurityController::login
+
+login_check:
+    path: /login_check
+
+producto_reporte_pdf:
+    path: /producto/reporte/pdf
+    methods: [GET]
+    controller: App\Controller\Admin\ProductoCrudController::reportePdfAction
+  

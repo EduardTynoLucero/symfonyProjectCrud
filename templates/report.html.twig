@@ -1,0 +1,23 @@
+{% extends 'easy_admin/layout.html.twig' %}
+
+{% block content %}
+    <h1>Informe de datos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Descripcion Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+                <tr>
+                    <td>{{ item.id }}</td>
+                    <td>{{ item.descripcion_producto }}</td>
+                    <td>{{ item.precio }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
